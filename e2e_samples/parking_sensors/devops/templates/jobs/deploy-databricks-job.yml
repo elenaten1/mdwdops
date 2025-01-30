@@ -80,7 +80,7 @@ jobs:
             set -o nounset
 
             # Check if release directory exists.
-            databricks_release_path="/Workspace/$DATABRICKS_NOTEBOOK_PATH"
+            databricks_release_path="/Workspace$DATABRICKS_NOTEBOOK_PATH"
             if databricks workspace list $databricks_release_path > /dev/null 2>&1; then
                 echo "Folder '$databricks_release_path' already exists."
             else
@@ -88,7 +88,7 @@ jobs:
                 echo "Folder '$databricks_release_path' created."
             fi
 
-            echo "Creating Build folder in ADLS..."
+            echo "Creating folder in ADLS..."
             relative_path=${DBFS_LIBS_PATH#dbfs:/mnt/}
             fs_name="$(cut -d '/' -f 1 <<< $relative_path)"
             fs_folder_path="/$(cut -d '/' -f 2- <<< $relative_path)"
