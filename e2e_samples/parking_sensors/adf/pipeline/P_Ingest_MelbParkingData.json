@@ -30,7 +30,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/releases/dev/02_standardize.py",
+					"notebookPath": "/releases/dev/02_standardize",
 					"baseParameters": {
 						"infilefolder": {
 							"value": "@variables('infilefolder')",
@@ -59,7 +59,6 @@
 			},
 			{
 				"name": "Set infilefolder",
-				"description": "  ",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -207,7 +206,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/releases/dev/03_transform.py",
+					"notebookPath": "/releases/dev/03_transform",
 					"baseParameters": {
 						"loadid": {
 							"value": "@pipeline().RunId",
@@ -274,7 +273,7 @@
 			}
 		},
 		"annotations": [],
-		"lastPublishTime": "2025-01-30T08:53:46Z"
+		"lastPublishTime": "2025-02-06T10:11:21Z"
 	},
 	"type": "Microsoft.DataFactory/factories/pipelines"
 }

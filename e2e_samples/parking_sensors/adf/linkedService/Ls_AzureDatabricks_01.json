@@ -5,9 +5,9 @@
 		"annotations": [],
 		"type": "AzureDatabricks",
 		"typeProperties": {
-			"domain": "https://adb-1177995296933083.3.azuredatabricks.net",
+			"domain": "https://adb-1889935085745223.3.azuredatabricks.net",
 			"authentication": "MSI",
-			"workspaceResourceId": "/subscriptions/ab1f9369-e10d-4660-8be0-79392069781a/resourceGroups/mdwdops-bfehc-dev-rg/providers/Microsoft.Databricks/workspaces/mdwdops-dbw-dev-bfehc",
+			"workspaceResourceId": "/subscriptions/ab1f9369-e10d-4660-8be0-79392069781a/resourceGroups/mdwdops-1eqf1-dev-rg/providers/Microsoft.Databricks/workspaces/mdwdops-dbw-dev-1eqf1",
 			"newClusterNodeType": "Standard_DC4as_v5",
 			"newClusterNumOfWorker": "1",
 			"newClusterSparkEnvVars": {
